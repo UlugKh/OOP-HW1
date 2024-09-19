@@ -3,7 +3,14 @@ package student;
 public class Homework1 {
 
     public double shippingCalculator(int n){
-        //TODO Write your code here for problem 1
+        if (n == 0) {
+            return 0.0;
+        } else if (n == 1) {
+            return 10.95;
+        } else if (n>1) {
+            return 10.95 + n * 2.95;
+        }
+        
         return 0;
     }
     public boolean isValidTriangle(int a, int b, int c){
